@@ -34,7 +34,7 @@ func payDay(hoursWorked, hourlyRate int) (int, error) {
 		return 0, ErrHourlyRate
 	}
 
-	if hourlyRate < 0 || hourlyRate > 80 {
+	if hoursWorked < 0 || hoursWorked > 80 {
 		return 0, ErrHoursWorked
 	}
 
