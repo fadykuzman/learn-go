@@ -54,6 +54,6 @@ func getDots() []dot {
 func main() {
 	dots := getDots()
 	for i := 0; i < len(dots); i++ {
-		fmt.Println("dot%v: %#v\n", i+1, dots[i])
+		fmt.Printf("dot%v: %#v\n", i+1, dots[i])
 	}
 }
