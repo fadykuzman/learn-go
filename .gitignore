@@ -28,3 +28,4 @@ go.work.sum
 tags
 *.ods#
 *.ods
+tags.*
