@@ -34,7 +34,13 @@
           inherit inputs pkgs;
           modules = [
             {
-              languages.go.enable = true;
+              languages = {
+                go.enable = true;
+                rust = {
+                  enable = true;
+                  toolchain.enable = true;
+                };
+              };
               services = {
                 adminer.enable = true;
                 postgres = {
